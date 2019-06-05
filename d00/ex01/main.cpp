@@ -6,7 +6,7 @@
 /*   By: mwestvig <mwestvig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 13:13:58 by mwestvig          #+#    #+#             */
-/*   Updated: 2019/06/05 11:49:53 by mwestvig         ###   ########.fr       */
+/*   Updated: 2019/06/05 11:58:00 by mwestvig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,34 +19,35 @@ int main() {
 	std::string     command;
 
 	contact_index = 0;
-  while (1)
-  {
-    std::cin >> command;
-    if (command == "ADD")
-    {
-		if (contact_index < MAX_CONTACTS)
+	while (1)
+	{
+		std::cin >> command;
+		if (command == "ADD")
 		{
-			phonebook[contact_index] = addContact();
-			std::cout << "Contact Saved!" << std::endl;
+			if (contact_index < MAX_CONTACTS)
+			{
+				phonebook[contact_index] = addContact();
+				contact_index++;
+				std::cout << "Contact Saved!" << std::endl;
+			}
+			else
+			{
+				std::cout << "Phonebook has reached the max number of contacts.";
+				std::cout << std::endl;
+			}
+		}
+		else if (command == "SEARCH")
+		{
+
+		}
+		else if (command == "EXIT")
+		{
+			break;
 		}
 		else
 		{
-			std::cout << "Phonebook has reached the max number of contacts.";
-			std::cout << std::endl;
+			std::cout << "Please enter a valid command!" << std::endl;
 		}
-    }
-    else if (command == "SEARCH")
-    {
-
-    }
-    else if (command == "EXIT")
-    {
-      break;
-    }
-	else
-	{
-		std::cout << "Please enter a valid command!" << std::endl;
 	}
-  }
-  return 0;
+	return 0;
 }
