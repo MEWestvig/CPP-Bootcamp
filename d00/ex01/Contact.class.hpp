@@ -6,7 +6,7 @@
 /*   By: mwestvig <mwestvig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 10:46:26 by mwestvig          #+#    #+#             */
-/*   Updated: 2019/06/05 11:03:19 by mwestvig         ###   ########.fr       */
+/*   Updated: 2019/06/05 11:24:29 by mwestvig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,3 +61,5 @@ private:
 	std:string	_underwearColour;
 	std:string	_darkestSecret;
 }
+
+Contact		addContact();
