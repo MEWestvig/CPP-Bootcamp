@@ -6,24 +6,25 @@
 #    By: mwestvig <mwestvig@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/04 12:33:21 by mwestvig          #+#    #+#              #
-#    Updated: 2019/06/04 12:41:21 by mwestvig         ###   ########.fr        #
+#    Updated: 2019/06/05 11:40:24 by mwestvig         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME     := phonebook
+NAME		:= phonebook
 
-SRCS     := *.cpp
-OBJS     := $(SRCS:.cpp=.o)
+SRCS		:= Contact.class.cpp addContact.cpp main.cpp
+HDRS		:= Contact.class.hpp
+OBJS		:= $(SRCS:.cpp=.o)
 
-CXX      := clang++
-CXXFLAGS := -Wall -Werror -Wextra
+CXX			:= clang++
+CXXFLAGS	:= -std=c++98 -Wall -Werror -Wextra
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
+$(NAME): $(OBJS) $(HDRS)
 	@$(CXX) $(OBJS) -o $@
 
-%.o: %.cpp
+%.o: %.cpp %.hpp
 	$(CXX) $(CXXFLAGS) -o $@ -c $<
 
 clean:

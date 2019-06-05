@@ -6,7 +6,7 @@
 /*   By: mwestvig <mwestvig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 10:22:49 by mwestvig          #+#    #+#             */
-/*   Updated: 2019/06/05 10:44:28 by mwestvig         ###   ########.fr       */
+/*   Updated: 2019/06/05 11:44:45 by mwestvig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ void Contact::setPostalAddress(std::string address)
 }
 void Contact::setEmailAddress(std::string email)
 {
-  this->_emailAddress = address;
+  this->_emailAddress = email;
   return;
 }
 void Contact::setPhoneNumber(std::string number)
