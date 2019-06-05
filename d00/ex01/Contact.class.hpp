@@ -6,7 +6,7 @@
 /*   By: mwestvig <mwestvig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 10:46:26 by mwestvig          #+#    #+#             */
-/*   Updated: 2019/06/05 11:53:41 by mwestvig         ###   ########.fr       */
+/*   Updated: 2019/06/05 13:44:16 by mwestvig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ private:
 	std::string	_darkestSecret;
 };
 
-Contact		addContact();
+Contact					addContact();
+void					search(int num_contacts, Contact phonebook[MAX_CONTACTS]);
 
 #endif

@@ -6,13 +6,13 @@
 #    By: mwestvig <mwestvig@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/04 12:33:21 by mwestvig          #+#    #+#              #
-#    Updated: 2019/06/05 11:54:03 by mwestvig         ###   ########.fr        #
+#    Updated: 2019/06/05 13:37:10 by mwestvig         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		:= phonebook
 
-SRCS		:= Contact.class.cpp addContact.cpp main.cpp
+SRCS		:= Contact.class.cpp addContact.cpp searchContact.cpp main.cpp
 HDRS		:= Contact.class.hpp
 OBJS		:= $(SRCS:.cpp=.o)
 
