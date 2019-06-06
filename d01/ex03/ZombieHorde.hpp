@@ -1,37 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Pony.hpp                                           :+:      :+:    :+:   */
+/*   ZombieHorde.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mwestvig <mwestvig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/05 15:05:38 by mwestvig          #+#    #+#             */
-/*   Updated: 2019/06/06 12:17:28 by mwestvig         ###   ########.fr       */
+/*   Created: 2019/06/06 14:47:47 by mwestvig          #+#    #+#             */
+/*   Updated: 2019/06/06 14:48:28 by mwestvig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PONY_HPP
-# define PONY_HPP
+#ifndef ZOMBIEHORDE_HPP
+# define ZOMBIEHORDE_HPP
 
 # include <string>
+# include <iostream>
+# include "Zombie.hpp"
 
-class Pony
+class ZombieHorde
 {
 public:
-    Pony(void);
-    ~Pony(void);
-	void		setName(std::string);
-	void		setAge(std::string);
-	void		setColour(std::string);
-	void		setGender(std::string);
-	std::string getName(void);
-    std::string getAge(void);
-    std::string getColour(void);
-	std::string getGender(void);
+	ZombieHorde(int);
+    ZombieHorde(void);
+    ~ZombieHorde(void);
+	Zombie      *newZombie(std::string);
+	std::string	randomName(void);
+
 private:
-    std::string _name;
-    std::string _age;
-    std::string _colour;
-	std::string _gender;
+	Zombie      *_zombie;
+	int         _number;
 };
+
 #endif

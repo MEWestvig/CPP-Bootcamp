@@ -3,17 +3,17 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mwestvig <mwestvig@student.42.fr>          +#+  +:+       +#+         #
+#    By: dpoulter <dpoulter@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/06/06 14:49:26 by mwestvig          #+#    #+#              #
-#    Updated: 2019/06/06 14:49:45 by mwestvig         ###   ########.fr        #
+#    Created: 2019/06/03 11:55:14 by dpoulter          #+#    #+#              #
+#    Updated: 2019/06/06 14:27:39 by mwestvig         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME     := pony
+NAME     := humanBrain
 
-SRCS     := main.cpp Pony.cpp
-HDRS     := Pony.hpp
+SRCS     := main.cpp Human.cpp Brain.cpp
+HDRS     := Brain.hpp
 OBJS     := $(SRCS:.cpp=.o)
 
 CXX      := clang++

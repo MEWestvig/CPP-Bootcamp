@@ -1,37 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Pony.hpp                                           :+:      :+:    :+:   */
+/*   Human.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mwestvig <mwestvig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/05 15:05:38 by mwestvig          #+#    #+#             */
-/*   Updated: 2019/06/06 12:17:28 by mwestvig         ###   ########.fr       */
+/*   Created: 2019/06/06 13:59:19 by mwestvig          #+#    #+#             */
+/*   Updated: 2019/06/06 14:34:48 by mwestvig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PONY_HPP
-# define PONY_HPP
+#ifndef HUMAN_HPP
+# define HUMAN_HPP
 
-# include <string>
+#include "Brain.hpp"
 
-class Pony
-{
+class Human {
 public:
-    Pony(void);
-    ~Pony(void);
-	void		setName(std::string);
-	void		setAge(std::string);
-	void		setColour(std::string);
-	void		setGender(std::string);
-	std::string getName(void);
-    std::string getAge(void);
-    std::string getColour(void);
-	std::string getGender(void);
+	Human(void);
+	~Human(void);
+	std::string	identify();
+	Brain	getBrain();
+
 private:
-    std::string _name;
-    std::string _age;
-    std::string _colour;
-	std::string _gender;
+	Brain _brain;
 };
+
 #endif

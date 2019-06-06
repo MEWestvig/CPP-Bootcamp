@@ -6,11 +6,10 @@
 /*   By: mwestvig <mwestvig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 15:04:51 by mwestvig          #+#    #+#             */
-/*   Updated: 2019/06/05 15:05:14 by mwestvig         ###   ########.fr       */
+/*   Updated: 2019/06/06 12:17:23 by mwestvig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Should be Pony.class.cpp but they requested Pony.cpp
 #include "Pony.hpp"
 
 Pony::Pony(void) { return ; }
