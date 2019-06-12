@@ -6,7 +6,7 @@
 /*   By: mwestvig <mwestvig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 11:27:39 by mwestvig          #+#    #+#             */
-/*   Updated: 2019/06/11 15:24:02 by MWestvig         ###   ########.fr       */
+/*   Updated: 2019/06/11 16:23:59 by MWestvig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 # include <iostream>
 # include <stdexcept>
+
+class Form;
 
 class Bureaucrat
 {
@@ -33,6 +35,7 @@ public:
 	std::string	getName(void) const;
 	void				incrementGrade(void);
 	void				decrementGrade(void);
+	void 				signForm(Form &form);
 
 	class GradeTooLowException : public std::exception
 	{
